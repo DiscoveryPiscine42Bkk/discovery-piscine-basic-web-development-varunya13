@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตาราง Responsive</title>
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header>
+        <h1>ตารางข้อมูลสินค้า</h1>
+    </header>
+
+    <main>
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>รหัสสินค้า</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>ราคา</th>
+                    <th>สต็อก</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="รหัสสินค้า">P001</td>
+                    <td data-label="ชื่อสินค้า">เมาส์ไร้สาย</td>
+                    <td data-label="ราคา">599 บาท</td>
+                    <td data-label="สต็อก">50 ชิ้น</td>
+                </tr>
+                <tr>
+                    <td data-label="รหัสสินค้า">P002</td>
+                    <td data-label="ชื่อสินค้า">คีย์บอร์ด</td>
+                    <td data-label="ราคา">890 บาท</td>
+                    <td data-label="สต็อก">30 ชิ้น</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2023 บริษัท Example Co., Ltd.</p>
+    </footer>
+
+</body>
+</html>
