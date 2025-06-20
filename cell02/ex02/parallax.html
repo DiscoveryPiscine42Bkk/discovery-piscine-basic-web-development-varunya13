@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Exercise</title>
+    <link rel="stylesheet" href="parallax.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('image1.jpg');
+
+            /* Height of the parallax section */
+            height: 100vh; 
+
+            /* Create the parallax effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .message {
+            position: relative;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .black-block {
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .second-image {
+            background-image: url('image2.jpg');
+            height: 100vh; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer-message {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        
+        .info {
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax">
+        <div class="message">Welcome to the Parallax Page</div>
+    </div>
+
+    <div class="black-block">This is a black block message.</div>
+
+    <div class="second-image">
+        <!-- Second image is used as background -->
+    </div>
+
+    <div class="footer-message">This is the footer message.</div>
+
+    <div class="info">
+        <p>You can use any images and text you like.</p>
+    </div>
+
+</body>
+</html>
